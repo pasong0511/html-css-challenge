@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form>
+        <label for="firstName">First name</label>
+        <input id="firstName" type="text" placeholder="이름" required><br>
+
+        <label for="LastName">Last name</label>
+        <input id="LastName" type="text" placeholder="성" required><br>
+        
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="이메일" required><br>
+        
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="비밀번호" minlength="10" required><br>
+
+        <label for="birthDay">Birth date</label>
+        <input id="birthDay" type="date" placeholder="생년월일" required><br>
+
+        <label for="point">How Happy are you</label>
+        <input id="point" type="range" list="tickmarks" required><br>
+        <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+        </datalist>
+
+        <label for="point">What is your fav.color?</label>
+        <input id="point" type="color" required><br>
+        
+        <button>Create Account</button>
+    </form>
+</body>
+</html>

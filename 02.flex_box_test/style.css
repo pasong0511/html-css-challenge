@@ -1,0 +1,35 @@
+body, html{
+	background-color : tomato;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height : 100%;
+}
+
+#middle-box{
+	background-color :#F5DEB3;
+	width: 250px;
+	height: 250px;
+	border: 2px solid black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.little-box{
+	background-color: #008080;
+}
+
+.little-box:nth-child(odd){
+	width: 50px;
+	height: 50px;
+	border: 3px solid white;
+}
+
+.little-box:nth-child(even){
+	width: 150px;
+	height: 50px;
+	border: dashed white;
+}
+
